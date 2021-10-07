@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="test" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gussi</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>   
+    <link rel="stylesheet" href="css/styles.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="main">
+    <a class="logo" href="#"></a>
+
+    <div class="wrap-left">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">            
+            
+            <picture>
+              <!-- <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg"> -->
+              <source media="(max-width: 992px)" srcset="img/01-tab.jpg">
+              <img src="img/01.jpg" alt="">
+            </picture>
+
+            <div class="slide-wrap-text">
+              <p class="slide-wrap-text__big-text">Light coat</p>
+              <p class="slide-wrap-text__small-text">More cotton, more freedom</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/02.jpg" alt="">
+
+            <div class="slide-wrap-text">
+              <p class="slide-wrap-text__big-text">Sandy longsleeve</p>
+              <p class="slide-wrap-text__small-text">More cotton, more freedom</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/03.jpg" alt="">
+
+            <div class="slide-wrap-text">
+              <p class="slide-wrap-text__big-text">Lime jacket</p>
+              <p class="slide-wrap-text__small-text">More cotton, more freedom</p>
+            </div>
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>     
+        
+      </div>
+
+      
+    </div>
+
+    <div class="wrap-right">
+      <div class="container">
+
+        <div class="head">
+          <p class="head__text-top small-heading">New collection</p>
+          <h1 class="head__heading">Gussi light coat </h1>
+          <p class="head__text">It takes you from the party to the after party 
+            with its fashion-forward styles. A playfull blend
+            of retro and modern outdoor design.</p>
+        </div>
+
+        <!-- choice -->
+        <div class="choice">
+
+          <div class="choice-wrap">
+            <ul class="form-list form-colour">
+              <li class="form-list__heading">
+                COLOUR
+              </li>
+  
+              <li class="form-list__item">
+                <input class="choice__radio" type="radio" id="colour1" value="colour1" name="colour" checked=""> 
+                <label class="choice__label choice__label-colour choice__label-colour--1" for="colour1"></label>              
+              </li>
+  
+              <li class="form-list__item">
+                <input class="choice__radio" type="radio" id="colour2" value="colour2" name="colour"> 
+                <label class="choice__label choice__label-colour choice__label-colour--2" for="colour2"></label>              
+              </li>
+  
+              <li class="form-list__item">
+                <input class="choice__radio" type="radio" id="colour3" value="colour3" name="colour"> 
+                <label class="choice__label choice__label-colour choice__label-colour--3" for="colour3"></label>              
+              </li>
+            </ul>
+  
+            <ul class="form-list form-size">
+              <li class="form-list__heading">
+                Size
+              </li>
+  
+              <li class="form-list__item">
+                <input class="choice__radio" type="radio" id="xs" value="xs" name="size"> 
+                <label class="choice__label choice__label-size" for="xs">xs</label>              
+              </li>
+  
+              <li class="form-list__item">
+                <input class="choice__radio" type="radio" id="s" value="s" name="size" checked=""> 
+                <label class="choice__label choice__label-size" for="s">s</label>              
+              </li>
+  
+              <li class="form-list__item">
+                <input class="choice__radio" type="radio" id="m" value="m" name="size"> 
+                <label class="choice__label choice__label-size" for="m">m</label>              
+              </li>
+  
+              <li class="form-list__item">
+                <input class="choice__radio" type="radio" id="l" value="l" name="size" disabled="disabled"> 
+                <label class="choice__label choice__label-size" for="l">l</label>              
+              </li>
+            </ul>
+  
+            <a class="btn btn--size" href="#">Size guide</a>
+          </div>          
+
+          <div class="choice-price">
+
+            <ul class="form-list form-quantity">
+              <li class="form-list__heading">
+                Quantity
+              </li>
+
+              <li class="form-list__item">
+                <button class="btn btn--quantity btn--minus">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" viewBox="0 0 10 2" fill="none">
+                    <path d="M9.56923 1.72998H0.430769C0.14359 1.72998 0 1.60035 0 1.34109V0.618869C0 0.35961 0.14359 0.22998 0.430769 0.22998H9.56923C9.85641 0.22998 10 0.35961 10 0.618869V1.34109C10 1.60035 9.85641 1.72998 9.56923 1.72998Z" fill="#192B3F"/>
+                  </svg>
+                </button>
+              </li>
+
+              <li class="form-list__item form-list__item-value">
+                1
+              </li>
+
+              <li class="form-list__item">
+                <button class="btn btn--quantity btn--plus">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                    <path d="M5.82278 4.21717H9.62025C9.87342 4.21717 10 4.34343 10 4.59596V5.40404C10 5.63973 9.87342 5.75758 9.62025 5.75758H5.82278V9.59596C5.82278 9.86532 5.6962 10 5.44304 10H4.58228C4.32911 10 4.20253 9.86532 4.20253 9.59596V5.75758H0.379747C0.126582 5.75758 0 5.63973 0 5.40404V4.59596C0 4.34343 0.126582 4.21717 0.379747 4.21717H4.20253V0.404041C4.20253 0.13468 4.32911 0 4.58228 0H5.44304C5.6962 0 5.82278 0.13468 5.82278 0.404041V4.21717Z" fill="#192B3F"/>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+
+            <ul class="form-list form-price">
+              <li class="form-list__heading">
+                Cost
+              </li>
+
+              <li class="form-list__item">
+                <p class="cost">$<span class="cost-value">120</span><span class="cost-small">.00</span></p>                
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- /choice -->
+
+        <!-- details  -->
+        <div class="details">
+          <p class="details__head small-heading">PRODUCT DETAILS</p>
+          <p class="details__text">Look out for its standout party dresses, feminine details, statement jackets and cool denim 
+            including skinny-cut jeans and cute denim shorts, which sit alongside its directional footwear 
+            and swimwear ranges.</p>
+          <p class="details__structure">63% Viscose, 37% Polyamide.</p>
+          <a class="btn btn--base" href="#">Order now</a>
+
+          <div class="question">
+            <div class="question-choice" aria-expanded="false" role='note'>
+              <div class="question-choice__answer">              
+                <p class="question-choice__text">Delivery</p>
+                <span class="question-choice__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                    <path d="M5.82278 4.21717H9.62025C9.87342 4.21717 10 4.34343 10 4.59596V5.40404C10 5.63973 9.87342 5.75758 9.62025 5.75758H5.82278V9.59596C5.82278 9.86532 5.6962 10 5.44304 10H4.58228C4.32911 10 4.20253 9.86532 4.20253 9.59596V5.75758H0.379747C0.126582 5.75758 0 5.63973 0 5.40404V4.59596C0 4.34343 0.126582 4.21717 0.379747 4.21717H4.20253V0.404041C4.20253 0.13468 4.32911 0 4.58228 0H5.44304C5.6962 0 5.82278 0.13468 5.82278 0.404041V4.21717Z" fill="#192B3F"/>
+                  </svg>
+                </span>              
+              </div>
+  
+              <div class="question-choice__result">              
+                <p class="question-choice__result-text">Look out for its standout party dresses</p>
+              </div>
+            </div>
+  
+            <div class="question-choice" aria-expanded="false" role='note'> 
+              <div class="question-choice__answer">              
+                <p class="question-choice__text">Return</p> 
+                <span class="question-choice__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                    <path d="M5.82278 4.21717H9.62025C9.87342 4.21717 10 4.34343 10 4.59596V5.40404C10 5.63973 9.87342 5.75758 9.62025 5.75758H5.82278V9.59596C5.82278 9.86532 5.6962 10 5.44304 10H4.58228C4.32911 10 4.20253 9.86532 4.20253 9.59596V5.75758H0.379747C0.126582 5.75758 0 5.63973 0 5.40404V4.59596C0 4.34343 0.126582 4.21717 0.379747 4.21717H4.20253V0.404041C4.20253 0.13468 4.32911 0 4.58228 0H5.44304C5.6962 0 5.82278 0.13468 5.82278 0.404041V4.21717Z" fill="#192B3F"/>
+                  </svg>
+                </span>              
+              </div>
+  
+              <div class="question-choice__result">              
+                <p class="question-choice__result-text">Look out for its standout party dresses</p>
+              </div>
+            </div>
+          </div>          
+        </div>
+        <!-- /details  -->
+
+        <!-- collection  -->
+        <div class="collection">
+          <p class="collection__heading small-heading">Similar Collections</p>
+
+          <div class="collection-wrap">
+            <a href="#">
+              <div class="collection__item collection__item--left">
+                <p class="collection__item-heading">Kingsman style</p>
+                <p class="collection__item-text">More silk, more freedom</p>
+              </div>
+            </a>            
+
+            <a href="#">
+              <div class="collection__item collection__item--right">
+                <p class="collection__item-heading">Denim goddess</p>
+                <p class="collection__item-text">More denim, more freedom</p>
+              </div>
+            </a>            
+          </div>
+
+        </div>
+        <!-- /collection  -->
+
+        <!-- form  -->        
+        <div class="form-section">
+          <h2 class="form-section__heading">Subscribe our newsletter</h2>
+          <p class="form-section__text">Get notified about new collections of Gussi Store</p>
+
+          <form class="form" method="post" autocomplete="off">
+
+            <fieldset class="form__element form__element--first-name">
+              <label class="form__label" for="first-name">Enter your name</label>
+              <input class="form__input form__input--name" id="first-name" name="first-name" type="text" required="">
+              <span class="form__placeholder">Enter your name</span>
+            </fieldset>
+
+            <fieldset class="form__element form__element--email">
+              <label class="form__label" for="email">Enter your e-mail</label>
+              <input class="form__input form__input--email" id="email" name="email" type="email" required="">
+              <span class="form__placeholder">Enter your e-mail</span>                
+            </fieldset>
+
+            <fieldset class="form__element form__element--radio">
+              <p class="form__text">Choose your gender:</p>
+
+              <input class="form__radio" type="radio" id="male" value="male" name="gender" checked="">
+              <label class="form__label-radio" for="male">Male</label>
+
+              <input class="form__radio" type="radio" id="female" value="female" name="gender">
+              <label class="form__label-radio" for="female">Female</label>
+            </fieldset>
+
+            <fieldset class="form__element form__element--checkbox">
+              <input class="form__checkbox" type="checkbox" id="approval" value="approval" name="approval" checked="">
+              <label class="form__label-checkbox" for="approval">Look out for its standout party dresses, feminine details</label>                        
+            </fieldset>
+
+            <fieldset class="form__element form__element--submit">
+              <button class="btn btn--base">Subscribe Gussi</button>            
+            </fieldset>
+
+          </form>
+        </div>
+        <!-- /form  -->
+
+      </div>
+    </div>
+  </main>
+  
+    
+  
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
+</html>
